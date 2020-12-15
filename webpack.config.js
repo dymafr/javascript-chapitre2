@@ -5,7 +5,7 @@ module.exports = {
   entry: path.resolve(__dirname, "src/index.js"),
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].bundle.js"
+    filename: "[name].bundle.js",
   },
   module: {
     rules: [
@@ -13,23 +13,24 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
-        }
-      }
-    ]
+          loader: "babel-loader",
+        },
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "src/index.html")
-    })
+      template: path.resolve(__dirname, "src/index.html"),
+    }),
   ],
   devtool: "source-map",
   mode: "development",
   devServer: {
-    contentBase: path.resolve(__dirname, "./dist"),
+    contentBase: path.resolve(__dirname, "./src"),
+    watchContentBase: true,
     inline: true,
     open: true,
     hot: true,
-    port: 4000
-  }
+    port: 4000,
+  },
 };
