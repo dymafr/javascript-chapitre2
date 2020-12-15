@@ -26,10 +26,8 @@ module.exports = {
   devtool: 'source-map',
   mode: 'development',
   devServer: {
-    contentBase: path.resolve(__dirname, './src'),
     inline: true,
     open: true,
-    hot: true,
     port: 4000,
   },
 };
