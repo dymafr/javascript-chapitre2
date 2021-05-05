@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://javascript-chapitre2/./src/index.js"],"names":["test","console","log"],"mappings":";;;;;AAAA,IAAMA,IAAI,GAAG,EAAb;AAEAC,OAAO,CAACC,GAAR,CAAYF,IAAZ,E","file":"main.bundle.js","sourcesContent":["const test = 42;\n\nconsole.log(test);\n"],"sourceRoot":""}
