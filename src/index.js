@@ -1,3 +1,7 @@
-const test = 42;
+import './test';
 
-console.log(test);
+function func() {
+  console.log(this);
+}
+
+func();
