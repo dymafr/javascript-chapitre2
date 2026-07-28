@@ -1,17 +1,16 @@
 {
   "name": "javascript-chapitre2",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Projet d'exemple du chapitre 2 de la formation JavaScript",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
     "build": "vite build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preview": "vite preview",
+    "test": "node --check src/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "vite": "^5.0.11"
+    "vite": "^8.1.5"
   }
 }
